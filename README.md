@@ -113,6 +113,8 @@ En este apartado hablaremos sobre lo tipos de volúmenes existentes en docker, h
 > docker volume create [NOMBRE_VOLUMEN]
 * Para asignar el volume creado a un contenedor:
 > docker run -d -it --name [NOMBRE_CONTENEDOR] -v [NOMBRE_VOLUMEN]:[/RUTA/CONTENEDOR] [NOMBRE_IMAGEN]
+* Para eliminar todos los volúmenes locales no utilizados. Los volúmenes locales no utilizados son aquellos que no son referenciados por ningún contenedor.
+> docker volumen prune
 
 * Volumen bind: es una manera de asociar una carpeta de nuestro Host y conectarla como una carpeta dentro de un contenedor.
 Este sistema nos permite ver esa carpeta desde el contenedor y también desde nuestro Host. Usar esos ficheros, copiarlos y además en caso de tener una solución de almacenamiento distribuido, poder tener múltiples copias.
