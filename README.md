@@ -45,8 +45,11 @@ Se puede asignar recursos definidos como el % de CPU, el % de RAM a los contened
 > docker run --name [Nombre_que_queremos_del_Contenedor] [Nombre_imagen]  
 * Para iniciar un contenedor en background:
 > docker run -d --name [Nombre_que_queremos_del_Contenedor] [Nombre_imagen]
+
 > docker run -detach --name [Nombre_que_queremos_del_Contenedor] [Nombre_imagen]
+
 > docker run -it --name [Nombre_que_queremos_del_Contenedor] [Nombre_imagen]
+
 > docker run -dit --name [Nombre_que_queremos_del_Contenedor] [Nombre_imagen]
 * Para ver el log de un contenedor: 
 > docker logs [ID_CONTAINER]
